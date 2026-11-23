@@ -1,87 +1,113 @@
-# Read, No Reply · Selected AI Conversation Excerpts
+# Read, after.
+## A conversation about designing uncertainty
 
-Source · Wanqi Wu’s project conversation with Codex. The passages below preserve the original wording. Section titles and speaker labels were added for navigation. Omission notes mark where the full exchange included additional text or images. This selection covers ideation and project choice.
+**Wanqi Wu × Codex**  
+*AI collaboration notes for Feeling Through Function*
 
-## 1. Exploring project ideas
+> **About this record**  
+> This is an edited reconstruction of the project’s documented development. Prompts have been rephrased, AI responses condensed, and related exchanges grouped by design question. It is not a verbatim chat transcript. Implementation details refer to the working prototype; proposed user testing is identified as future work.
 
-**Wanqi Wu**
+[Experience the project](https://wanqi777.github.io/Read_After/) · [Explore the code](dist/script.js) · [Read the design notes](DESIGN.md)
 
-> 可以做一个什么样的比较有趣有价值的项目（可以放入作品集等级的那种）
+### The question that guided the work
 
-**Codex**
+**How can an interaction help someone reconsider an unanswered message without pretending to know another person’s mind?**
 
-*Other project ideas and framing omitted.*
+| Design question | What changed |
+| --- | --- |
+| What does “read” actually tell us? | The receipt became a fixed fact; its interpretation remained open. |
+| How could the idea feel less like an explanation? | The receiver’s situation was delayed and revealed through the interface. |
+| What should multiple inputs mean? | Spatial proximity and matching clocks became a combined reveal condition. |
+| What happens when the experience is interrupted? | Persistent reveals, timer cleanup and accessible alternatives stabilized the story. |
 
-> - **《已读以后》 *Read, No Reply***。用户选择消息情境，再拖动等待时间。同样的「已读」在约午饭、等重要确认、聊一件难开口的事时有不同的分量。两侧呈现发送者看见的界面和接收者当时的处境，探索一个小小的状态标签如何让人推测对方的意图。
+## 01 — Start with what is missing
 
-## 2. Comparing the prototypes
+**Reconstructed prompt**
 
-**Wanqi Wu**
+> I want to explore the feeling of seeing “Read” without receiving a reply. How could a small interactive webpage make that uncertainty visible?
 
-> 这三个主题可以给我简单看个原型图片吗，好让我比较选择
+**AI response, summarized**
 
-**Codex**
+Show the sender’s message and read receipt first. Reveal the receiver’s circumstances later, giving visitors a chance to reconsider what they initially assumed.
 
-*Three-panel concept image and most of the accompanying comparison omitted.*
+**My design judgment**
 
-> 如果作品集偏**产品设计**，我会选 **01**，因为可以测试哪种提示帮助用户判断该等还是离开。想让作品更有**叙事张力**，我会选 **02**，把右侧的接收者视角延后揭示，让用户先经历一次自己的猜测。偏**创意前端**的话，我会选 **03**，让声波、文字和环境音随操作一起变化。
+The useful part was the gap between an observable event and an inferred motive. I chose to keep the receipt unchanged while showing different possible contexts. A message being read would not become a score for how much someone cared.
 
-## 3. Choosing the project and changing the sequence
+**What this clarified**
 
-**Wanqi Wu**
+The project needed to distinguish what the interface could establish from what the visitor might imagine. That distinction became the basis of the narrative.
 
-*Reattached concept image and attachment metadata omitted.*
+## 02 — Let the interface carry the feeling
 
-> 这三个主题你最推荐哪个
+**Reconstructed prompt**
 
-**Codex**
+> The first page explains too much. Can the conversation and the reveal carry more of the meaning, with less text and a more engaging interaction?
 
-> 我最推荐 **02《已读以后》（Read, No Reply）**。如果同时考虑这次作业的主题和作品集的辨识度，它有一个很具体的交互转折：**用户先根据「已读」猜测对方的意图，再看到对方当时的处境，有机会重新理解同一段沉默。**
->
-> 我会改动图里最关键的一点：**先只显示发送者视角，把右侧的接收者视角留到最后揭晓。** 用户选择消息情境，再拖动「已读多久」的滑块。同样是 12 分钟，等朋友确认午餐地点，和发出一句「我们晚点能聊聊吗？」之后的等待，可以有不同的节奏和画面反馈。让用户先选一个自己此刻的猜测，再点开另一侧，看到对方读完消息后走进了没有信号的地铁隧道。
+**AI response, summarized**
 
-*Further discussion of testing and comparisons omitted.*
+Keep one message at the center, reduce explanatory copy, and make the receiver’s perspective appear as a noticeable change in the experience. In the later independent edition, two floating windows could represent the distance between perspectives.
 
-**Wanqi Wu**
+**My design judgment**
 
-> 可以，那请你根据作业要求和评分标准完成这个项目
-> [https://tc.instructure.com/courses/34630/assignments/210484?module_item_id=903685](https://tc.instructure.com/courses/34630/assignments/210484?module_item_id=903685)
+I questioned the text-heavy first version and asked for stronger message-based interaction. After exploring web-art references, I requested a separate version so I could compare approaches. Codex developed the two-window implementation; I directed the revision toward a quieter, more experiential presentation.
 
+**What this clarified**
 
-## 4. User feedback on the first working page
+Asking AI to make a page “more interesting” was less useful than identifying what the visitor should encounter first, what should remain hidden, and which action should change their understanding.
 
-**Wanqi Wu — original wording**
+## 03 — Give the inputs a relationship
 
-> 我觉得网页设计上，文字有点繁多，信息不够简洁，交互不够有趣，聊天对话消息弹窗的形式可以加强
+**Reconstructed prompt**
 
-*The intervening redesign exchange is omitted. This message documents the user’s critique, not a verbatim technical specification of the final two-window implementation.*
+> How can bringing two windows together and adjusting their clocks work as one interaction, rather than as unrelated controls?
 
-## 5. Exploring a separate reference-inspired edition
+**AI response, summarized**
 
-**Wanqi Wu — original wording**
+Treat closeness and time as separate state conditions. Reveal the receiver’s side only when the windows are close and both clocks match the read receipt. Show feedback when only one condition is satisfied.
 
-> 那有没有什么新颖的网页交互模式呢？想之前的elsewhere一样？查询一下网络上的设计师集成网站、网页艺术网站等作为案例
+**The implemented rule**
 
-*Reference research and discussion omitted.*
+```js
+if (!state.revealed && state.near && atReadMoment()) {
+  reveal();
+}
+```
 
-**Wanqi Wu**
+`atReadMoment()` checks that both clock values equal `4`, displayed as **12:04**.
 
-> 这些案例都非常棒，那么《已读以后》该怎么借鉴
+**My design judgment**
 
-*Design discussion omitted.*
+Bringing the windows closer gives perspective-taking a spatial action. Aligning the clocks identifies a shared moment. The rule makes these actions depend on each other: neither condition alone reveals the scene. Buttons and keyboard controls offer alternatives to dragging.
 
-**Wanqi Wu**
+**What this clarified**
 
-> 参考案例做一版网页，不要覆盖原文件
+An AND condition can shape the pacing of a story. It also creates a practical design question: what feedback helps someone understand partial progress without revealing the outcome too early?
 
-*Implementation, code generation and browser-check exchanges omitted.*
+## 04 — Review what the polished version can still lose
 
-**Codex — selected delivery response**
+**AI-assisted implementation review**
 
-> 已完成独立新版，**原版未覆盖**，当前 Git 工作区干净。
->
-> 新版用两扇可拖动的聊天窗口推进故事：**靠近窗口＋对齐时间**，揭示“发送失败”和“删掉的草稿”两种沉默。包含中英切换、音效、手机适配和重新体验。
+The review moved beyond whether the reveal worked. It considered what happened after discovery, during a scene change, and when animation was reduced.
 
-## Scope and attribution
+| Concern | Implemented response | Why it matters |
+| --- | --- | --- |
+| Moving a window after a reveal | Keep the discovered scene visible. | A small movement should not erase the visitor’s discovery. |
+| Switching scenes while callbacks are pending | Cancel story timers before resetting state. | A previous scene must not write into the next one. |
+| Removing the typing animation | Retain the draft with its deleted/unsent status. | Reducing motion should preserve the story’s information. |
+| Using a phone instead of desktop dragging | Stack the windows and provide a tap/button action. | Instructions should describe the controls actually available. |
 
-This is an edited selection of actual project messages, not a complete chat export. Headings and omission notes were added; quoted messages preserve their original wording. These excerpts document project selection, human critique and the request for an independent iteration. Code and tests are available separately in the repository. The final source uses “Sending… · No signal”; the delivery message’s “发送失败” is a brief summary rather than the interface’s exact state label.
+**What this clarified**
+
+The reduced-motion revision was particularly revealing. Removing an effect could also remove the evidence that words had existed. Accessibility therefore affected the narrative itself, as well as the way a control was operated.
+
+## What I take from the collaboration
+
+AI helped translate an emotional idea into interface states and working functions. My role was to question whether those states communicated the experience I wanted, request alternatives, and examine what the model left out.
+
+The final two scenes remain possibilities: a reply waiting for a signal, or a draft that never gets sent. Neither resolves a real person’s intentions. My next peer test would ask whether visitors understand that distinction and whether the second scene feels like an alternative rather than the next event.
+
+---
+
+**Authorship and evidence**  
+Concept selection, critique and creative direction: **Wanqi Wu**. Ideation, coding and assisted checks: **Codex**. Functional checks are documented in the assignment; they are not a study of emotional outcomes. The reconstructed prompts above communicate the development questions and should not be cited as exact historical messages.

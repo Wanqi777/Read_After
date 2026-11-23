@@ -22,7 +22,7 @@ Both scenes are authored fiction and represent alternatives, not a chronological
 - [`dist/style.css`](dist/style.css): layout, responsive behavior and reduced motion.
 - [`dist/script.js`](dist/script.js): variables, event listeners, compound condition, scene transitions, timers, translations and synthesized sound.
 - [`DESIGN.md`](DESIGN.md): design intent and interaction decisions.
-- [`AI_TRANSCRIPT.md`](AI_TRANSCRIPT.md): selected original AI conversation excerpts, with omissions and scope identified.
+- [`AI_TRANSCRIPT.md`](AI_TRANSCRIPT.md): edited AI collaboration notes, with reconstructed prompts, summarized responses and design reflections clearly identified.
 - [`dist/assets/CREDITS.md`](dist/assets/CREDITS.md): photographs and font attribution.
 
 Core condition: `!state.revealed && state.near && state.you === 4 && state.them === 4`.

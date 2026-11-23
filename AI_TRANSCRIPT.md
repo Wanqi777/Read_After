@@ -4,7 +4,7 @@
 *AI collaboration notes for Feeling Through Function*
 
 > **About this record**  
-> This is an edited reconstruction of the project’s documented development. Prompts have been rephrased, AI responses condensed, and related exchanges grouped by design question. It is not a verbatim chat transcript. Implementation details refer to the working prototype; proposed user testing is identified as future work.
+> This is an edited reconstruction of the project’s documented development. Prompts have been rephrased, AI responses condensed, and related exchanges grouped by design question.
 
 [Experience the project](https://wanqi777.github.io/Read_After/) · [Explore the code](dist/script.js) · [Read the design notes](DESIGN.md)
 

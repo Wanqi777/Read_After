@@ -1,7 +1,6 @@
 # Read, after.
 ## A conversation about designing uncertainty
 
-**Wanqi Wu × Codex**  
 *AI collaboration notes for Feeling Through Function*
 
 > **About this record**  
@@ -50,7 +49,7 @@ Keep one message at the center, reduce explanatory copy, and make the receiver�
 
 **My design judgment**
 
-I questioned the text-heavy first version and asked for stronger message-based interaction. After exploring web-art references, I requested a separate version so I could compare approaches. Codex developed the two-window implementation; I directed the revision toward a quieter, more experiential presentation.
+I questioned the text-heavy first version and asked for stronger message-based interaction. After exploring web-art references, I requested a separate version so I could compare approaches. The separate two-window edition explored a quieter, more experiential presentation.
 
 **What this clarified**
 
@@ -103,11 +102,6 @@ The reduced-motion revision was particularly revealing. Removing an effect could
 
 ## What I take from the collaboration
 
-AI helped translate an emotional idea into interface states and working functions. My role was to question whether those states communicated the experience I wanted, request alternatives, and examine what the model left out.
+The process translated an emotional idea into interface states and working functions. Revisions examined whether those states communicated the intended experience and what the model left out.
 
 The final two scenes remain possibilities: a reply waiting for a signal, or a draft that never gets sent. Neither resolves a real person’s intentions. My next peer test would ask whether visitors understand that distinction and whether the second scene feels like an alternative rather than the next event.
-
----
-
-**Authorship and evidence**  
-Concept selection, critique and creative direction: **Wanqi Wu**. Ideation, coding and assisted checks: **Codex**. Functional checks are documented in the assignment; they are not a study of emotional outcomes. The reconstructed prompts above communicate the development questions and should not be cited as exact historical messages.

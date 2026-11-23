@@ -1,6 +1,6 @@
 # Read, after.
 
-Two windows. One unanswered message. An expressive interaction by **Wanqi Wu** for *Feeling Through Function — Designing Expressive Reactions*.
+Two windows. One unanswered message. An expressive interaction for *Feeling Through Function — Designing Expressive Reactions*.
 
 ## Run
 
@@ -29,9 +29,9 @@ Core condition: `!state.revealed && state.near && state.you === 4 && state.them 
 
 Reveal is latched, so moving a window after discovery does not hide the outcome. Scene changes cancel pending story timers. English/Chinese, keyboard and touch alternatives, optional synthesized audio and reduced-motion content are included. No microphone or personal messages are used.
 
-## Authorship and development
+## Development notes
 
-Wanqi Wu selected the phenomenon, evaluated prototypes and directed revisions. Codex assisted with ideation, implementation and checks. The independent two-window edition was developed separately from the earlier Read, No Reply project; the earlier source files were preserved.
+The independent two-window edition was developed separately from the earlier Read, No Reply project; the earlier source files were preserved.
 
 Recorded development checks covered both input orders, partial combinations, reveal persistence, replay/reset and desktop/mobile layouts. These are functional checks, not evidence of a measured emotional effect. Actual sound output, screen-reader behavior and the OS reduced-motion mode still merit independent human testing.
 
